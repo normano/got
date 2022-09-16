@@ -47,7 +47,7 @@
 	"dependencies": {
 		"@sindresorhus/is": "^5.2.0",
 		"@szmarczak/http-timer": "^5.0.1",
-		"cacheable-lookup": "^6.0.4",
+		"cacheable-lookup": "normano/cacheable-lookup",
 		"cacheable-request": "normano/cacheable-request",
 		"decompress-response": "^6.0.0",
 		"form-data-encoder": "^2.1.2",

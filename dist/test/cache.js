@@ -6,7 +6,7 @@ import test from 'ava';
 import { pEvent } from 'p-event';
 import getStream from 'get-stream';
 import nock from 'nock';
-import CacheableLookup from 'cacheable-lookup';
+import { CacheableLookup } from 'cacheable-lookup';
 import delay from 'delay';
 import got, { CacheError } from '../source/index.js';
 import withServer from './helpers/with-server.js';

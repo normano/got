@@ -17,7 +17,7 @@ import type { Socket } from 'node:net';
 import type { SecureContextOptions, DetailedPeerCertificate } from 'node:tls';
 import type { Agent as HttpAgent, ClientRequest } from 'node:http';
 import type { RequestOptions as HttpsRequestOptions, Agent as HttpsAgent } from 'node:https';
-import CacheableLookup from 'cacheable-lookup';
+import { CacheableLookup } from 'cacheable-lookup';
 import http2wrapper, { type ClientHttp2Session } from 'http2-wrapper';
 import type { FormDataLike } from 'form-data-encoder';
 import type CacheableRequest from 'cacheable-request';

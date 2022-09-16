@@ -20,7 +20,7 @@ import type {
 import type {InspectOptions} from 'node:util';
 import is, {assert} from '@sindresorhus/is';
 import lowercaseKeys from 'lowercase-keys';
-import CacheableLookup from 'cacheable-lookup';
+import {CacheableLookup} from 'cacheable-lookup';
 import http2wrapper, {type ClientHttp2Session} from 'http2-wrapper';
 import {isFormData} from 'form-data-encoder';
 import type {FormDataLike} from 'form-data-encoder';
