@@ -1,0 +1,14 @@
+import type { ExecutionContext, Macro } from 'ava';
+import { type Got } from '../../source/index.js';
+import { type ExtendedHttpsTestServer, type HttpsServerOptions } from './create-https-test-server.js';
+import { type ExtendedHttpTestServer } from './create-http-test-server.js';
+import type { ExtendedHttpServer, GlobalClock } from './types.js';
+export declare type RunTestWithServer = (t: ExecutionContext, server: ExtendedHttpTestServer, got: Got, clock: GlobalClock) => Promise<void> | void;
+export declare type RunTestWithHttpsServer = (t: ExecutionContext, server: ExtendedHttpsTestServer, got: Got, fakeTimer?: GlobalClock) => Promise<void> | void;
+export declare type RunTestWithSocket = (t: ExecutionContext, server: ExtendedHttpServer) => Promise<void> | void;
+export declare const withBodyParsingServer: Macro<[RunTestWithServer], unknown>;
+declare const _default: Macro<[RunTestWithServer], unknown>;
+export default _default;
+export declare const withServerAndFakeTimers: Macro<[RunTestWithServer], unknown>;
+export declare const withHttpsServer: (options?: HttpsServerOptions, installFakeTimer?: boolean) => Macro<[RunTestWithHttpsServer]>;
+export declare const withSocketServer: Macro<[RunTestWithSocket]>;
